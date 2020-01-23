@@ -1,0 +1,39 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "chart.js": "^2.8.0",
+    "chartjs-plugin-annotation": "^0.5.7",
+    "cron": "^1.7.2",
+    "dateformat": "^3.0.3",
+    "express": "4.17.1",
+    "fast-html-parser": "^1.0.1",
+    "glob": "^7.1.4",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "lodash": "^4.17.15",
+    "memory-cache": "^0.2.0",
+    "mocha": "^6.2.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-router-dom": "^5.1.1",
+    "request": "^2.88.0",
+    "requestretry": "4.0.0",
+    "require-from-string": "^2.0.2",
+    "terser-webpack-plugin": "^2.1.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.0",
+    "zombie": "^6.1.4"
+  }
+}

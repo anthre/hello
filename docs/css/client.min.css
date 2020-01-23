@@ -1,0 +1,137 @@
+
+.page {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    opacity: 1;
+}
+.page.isLoading {
+    opacity: 0.5;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.page > .title {
+    font-weight: bold;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.page > .tips {
+}
+.page > .tips > ul > li > input {
+    font-size: 1em;
+    width: 2.7em;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.page > .content {
+}
+.page > .content > table {
+    border-collapse: collapse;
+    float: left;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.page > .content > table > tr:nth-child(2n) {
+    background-color: rgba(85,172,238,0.5);
+}
+.page > .content > table > tr > th {
+    font-size: 1em;
+    font-weight: bold;
+    height: 2em;
+    padding-left: 10px;
+}
+.page > .content > table > tr > th > select {
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    height: 2em;
+    box-sizing: content-box;
+    -webkit-box-sizing:content-box;
+    text-align-last: right;
+}
+.page > .content > table > tr > td {
+    text-align: right;
+    padding: 0 10px;
+}
+.page > .content > table > tr > td:first-child {
+    font-weight: bold;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sample {
+    position: relative;
+    cursor:	default;
+}
+.sample > .appendix {
+    display: none;
+    position: absolute;
+    color: #fff;
+    border-radius: 5px;
+    background: #000;
+    width: max-content;
+    text-align: left;
+}
+.sample:hover > .appendix {
+    display: inline-block;
+    left: 170px;
+}
+.sample:hover > .appendix:before {
+  content: "";
+  position: absolute;
+  margin-left: -10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #000;
+}
+.sample > table.appendix > tr > td {
+    padding: 0 10px;
+    max-width: 540px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+}
+.sample > table.appendix > tr > td > a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.rankUp {
+    color: blue;
+}
+.rankUp::before {
+    float: left;
+    content: "↑"
+}
+.rankDown {
+    color:red;
+}
+.rankDown::before {
+    float: left;
+    content: "↓"
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.page > .content > .charts {
+    float: right;
+    width: calc(100vw - 600px);
+}
+.page > .content > .charts > .chart {
+    float: left;
+}
+.page > .content > .charts > .chart.smallSquare {
+    width: 215px;
+    height: 140px;
+}
+.page > .content > .charts > .chart.portrait {
+    width: 520px;
+    height: 520px;
+    padding-right: 20px;
+}
